@@ -94,11 +94,13 @@ export class Utils {
    * ANDs the conditions together
    */
   static applyPaging(collection: any[], params: UrlParametersInfo) {
-    if (!params.skip && !params.limit) 
+    if (!params.skip && !params.limit)
       return collection;
     let length = collection.length;
     let start = params.skip < length ? params.skip : length;
-    let end = (length < start + params.limit) ? length : params.limit;
+    let end = start + params.limit;
+    if (length < end)
+      end = length;
     let list = collection.slice(start, end);
     return list;
   }
