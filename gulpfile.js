@@ -6,7 +6,7 @@ var del = require('del');
 
 var path = require("path");
 
-var ngcOutput = './src/';
+var ngcOutput = './dist/src/';
 var jsCopySrc = ['*.js', '*.js.map', '*.d.ts', '*.metadata.json'].map(ext => ngcOutput + ext);
 
 gulp.task('default', ['help']);
@@ -30,7 +30,7 @@ gulp.task('ngc',['clean'], function(done) {
 });
 
 gulp.task('clean', function(done) {
-  clean([ngcOutput+'*.js', '*.js.map', '*.d.ts', '!gulpfile.js', '*.metadata.json'], done);
+  clean(['*.js', '*.js.map', '*.d.ts', '!gulpfile.js', '*.metadata.json'], done);
 });
 
 /**
