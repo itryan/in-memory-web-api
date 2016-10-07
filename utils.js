@@ -88,7 +88,9 @@ export var Utils = (function () {
             return collection;
         var length = collection.length;
         var start = params.skip < length ? params.skip : length;
-        var end = (length < start + params.limit) ? length : params.limit;
+        var end = start + params.limit;
+        if (length < end)
+            end = length;
         var list = collection.slice(start, end);
         return list;
     };
