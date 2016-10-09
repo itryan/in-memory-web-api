@@ -2,7 +2,7 @@ import { ResponseOptions, URLSearchParams } from '@angular/http';
 import 'rxjs/add/operator/delay';
 import { InMemoryDbService, HttpMethodInterceptorArgs, InMemoryBackendConfigArgs, RequestInfo } from './in-memory-backend.service';
 import { STATUS } from './http-status-codes';
-import { UrlParametersParserConfig, UrlParametersParser } from './url-paramters'
+import { UrlParametersParserConfig, UrlParametersParser } from './url-parameters'
 import { Utils } from './utils';
 
 

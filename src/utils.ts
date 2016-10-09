@@ -4,7 +4,7 @@ import { Observer } from 'rxjs/Observer';
 
 import { STATUS_CODE_INFO, STATUS } from './http-status-codes';
 import { InMemoryBackendConfigArgs, isSuccess } from './in-memory-backend.service';
-import { UrlParametersInfo } from './url-paramters';
+import { UrlParametersInfo } from './url-parameters';
 
 export class Utils {
 
