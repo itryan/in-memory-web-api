@@ -7,7 +7,7 @@ import { ResponseOptions } from '@angular/http';
 import 'rxjs/add/operator/delay';
 import { InMemoryDbService } from './in-memory-backend.service';
 import { STATUS } from './http-status-codes';
-import { UrlParametersParser } from './url-paramters';
+import { UrlParametersParser } from './url-parameters';
 import { Utils } from './utils';
 /**
 * Interface for a class that creates an in-memory database

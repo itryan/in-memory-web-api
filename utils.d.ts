@@ -1,7 +1,7 @@
 import { Response, ResponseOptions } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { InMemoryBackendConfigArgs } from './in-memory-backend.service';
-import { UrlParametersInfo } from './url-paramters';
+import { UrlParametersInfo } from './url-parameters';
 export declare class Utils {
     static setStatusText(options: ResponseOptions): ResponseOptions;
     static createErrorResponse(status: number, message: string): ResponseOptions;
